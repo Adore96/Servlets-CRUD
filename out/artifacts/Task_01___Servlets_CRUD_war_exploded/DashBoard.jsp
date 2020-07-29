@@ -374,24 +374,16 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label>First Name</label>
+                            <label>Name</label>
                             <input type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Last Name</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>UserName</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
                             <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <textarea class="form-control" required></textarea>
                         </div>
                         <div class="form-group">
                             <label>Phone</label>
