@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Task 01 - Servlets CRUD:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Task 01 - Servlets CRUD/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Task 01 - Servlets CRUD" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
