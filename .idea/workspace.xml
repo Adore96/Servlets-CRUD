@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="" />
+    <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/Register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/DashBoard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/DashBoard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,12 +48,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/mysql-connector-java-8.0.11/mysql-connector-java-8.0.11/mysql-connector-java-8.0.11.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HttpSessions Servlets" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.371">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DashBoard.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.371" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/DashBoard.jsp" />
       <deployment>
@@ -180,7 +199,7 @@
       <workItem from="1596016374063" duration="6868000" />
       <workItem from="1596026135540" duration="18000" />
       <workItem from="1596077011482" duration="1970000" />
-      <workItem from="1596087369623" duration="5630000" />
+      <workItem from="1596087369623" duration="8044000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
@@ -220,6 +239,62 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="272" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596087501750" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596106452908">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596106452908" />
+    <state width="905" height="46" key="GridCell.Tab.0.bottom" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.0.center" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.0.left" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.0.right" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.1.bottom" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.1.center" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.1.left" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.1.right" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.2.bottom" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.2.center" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.2.left" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state width="905" height="46" key="GridCell.Tab.2.right" timestamp="1596106513977">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="905" height="46" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1596106513977" />
+    <state x="148" y="14" key="SettingsEditor" timestamp="1596105777773">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="148" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596105777773" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1596087507892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
