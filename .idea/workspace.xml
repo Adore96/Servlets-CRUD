@@ -7,18 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/adore96/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/DashBoard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/DashBoard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/DashboardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/DashboardServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/RegisterServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/DashboardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/DashboardServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/DashboardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/DashboardServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/DashBoard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/DashBoard.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/adore96/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
@@ -211,7 +208,7 @@
       <workItem from="1596026135540" duration="18000" />
       <workItem from="1596077011482" duration="1970000" />
       <workItem from="1596087369623" duration="11142000" />
-      <workItem from="1596162959680" duration="11849000" />
+      <workItem from="1596162959680" duration="14844000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
@@ -323,5 +320,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1596087436107" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596180325017">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596180325017" />
   </component>
 </project>

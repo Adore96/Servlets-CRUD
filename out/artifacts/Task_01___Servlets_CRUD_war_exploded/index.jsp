@@ -306,7 +306,7 @@
         <div id="formFooter">
             <a class="underlineHover" href="#">Forgot Password?</a><br>
             <%--                <a class="underlineHover" href="Register.jsp">SignUp</a>--%>
-            <form action="Register" method="post">
+            <form action="registerButton" method="post">
                 <input type="submit" class="fadeIn fourth" value="Register Button">
             </form>
         </div>

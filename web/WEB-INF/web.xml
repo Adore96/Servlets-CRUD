@@ -28,11 +28,11 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
-        <url-pattern>/Register</url-pattern>
+        <url-pattern>/registerButton</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>dashboardServlet</servlet-name>
-        <url-pattern>/SigninDashboard</url-pattern>
+        <url-pattern>/signinForm</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>logoutServlet</servlet-name>

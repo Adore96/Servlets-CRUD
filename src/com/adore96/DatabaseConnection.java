@@ -41,7 +41,7 @@ public class DatabaseConnection {
 
         try {
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, studentInfo.getFname());
+            ps.setString(1,studentInfo.getFname());
             ps.setString(2,studentInfo.getLname());
             ps.setString(3,studentInfo.getUname());
             ps.setString(4,studentInfo.getPassword());
