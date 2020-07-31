@@ -6,17 +6,19 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class DatabaseConnection {
-    private String url = "jdbc:mysql://localhost:3306/";
-    private String dbuname = "root";
+    private String url = "jdbc:mysql://localhost:3306/taskone";
+    private String dbuname = "";
     private String password = "";
-    private String dbdriver = "com.mysql.jdbc.Driver";
+    private String dbdriver = "com.mysql.cj.jdbc.Driver";
 
     public void loadDriver(String dbdriver){
         try {
+            System.out.println("dbdriver: "+dbdriver);
             Class.forName(dbdriver);
             System.out.println("Database Driver loaded Successfully.");
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
+            System.out.println(e);
             System.out.println("Error in loadDriver");
         }
     }
@@ -37,7 +39,7 @@ public class DatabaseConnection {
         loadDriver(dbdriver);
         Connection con = getConnection();
         String result = "Data was inserted Successfully";
-        String sql = "insert into student values(?,?,?,?,?)";
+        String sql = "insert into taskone.student values(?,?,?,?,?)";
 
         try {
             PreparedStatement ps = con.prepareStatement(sql);

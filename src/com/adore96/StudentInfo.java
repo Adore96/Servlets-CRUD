@@ -46,4 +46,13 @@ public class StudentInfo {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+
+    public StudentInfo(String fname, String lname, String uname, String password, String telephone) {
+        this.fname = fname;
+        this.lname = lname;
+        this.uname = uname;
+        this.password = password;
+        this.telephone = telephone;
+    }
+
 }

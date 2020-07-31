@@ -19,10 +19,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.11" level="project" />
     <orderEntry type="library" name="jsp-api-2.2" level="project" />
     <orderEntry type="library" name="jstl-1.2" level="project" />
     <orderEntry type="library" name="servlet-api-2.5" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.111" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.13" level="project" />
   </component>
 </module>

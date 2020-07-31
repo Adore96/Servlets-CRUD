@@ -3,7 +3,6 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/Documents/jsp-api-2.2.jar/jsp-api-2.2.jar!/" />
       <root url="jar://$USER_HOME$/Documents/jstl-1.2.jar/jstl-1.2.jar!/" />
-      <root url="jar://$USER_HOME$/Documents/mysql-connector-java-8.0.11/mysql-connector-java-8.0.11/mysql-connector-java-8.0.11.jar!/" />
       <root url="jar://$USER_HOME$/Documents/servlet-api-2.5.jar/servlet-api-2.5.jar!/" />
     </CLASSES>
     <JAVADOC />
