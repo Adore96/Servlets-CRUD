@@ -295,7 +295,7 @@
         </div>
 
         <!-- Login Form -->
-        <form action="Register" method="post">
+        <form action="SigninDashboard" method="post">
             <input type="text" id="fname" class="fadeIn second" name="fname" placeholder="First Name">
             <input type="text" id="lname" class="fadeIn third" name="lname" placeholder="Last Name">
             <input type="text" id="uname" class="fadeIn second" name="uname" placeholder="User Name">

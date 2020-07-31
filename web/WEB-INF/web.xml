@@ -12,15 +12,23 @@
         <servlet-name>registerServlet</servlet-name>
         <servlet-class>com.adore96.RegisterServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>dashboardServlet</servlet-name>
+        <servlet-class>com.adore96.DashboardServlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
-        <url-pattern>/Login</url-pattern>
+        <url-pattern>/LoginDashboard</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
         <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dashboardServlet</servlet-name>
+        <url-pattern>/SigninDashboard</url-pattern>
     </servlet-mapping>
 
 

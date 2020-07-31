@@ -363,6 +363,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Edit Modal HTML -->
     <div id="addEmployeeModal" class="modal fade">
         <div class="modal-dialog">

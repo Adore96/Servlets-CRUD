@@ -295,7 +295,7 @@
         </div>
 
         <!-- Login Form -->
-        <form action="Login" method="post">
+        <form action="LoginDashboard" method="post">
             <input type="text" id="uname" class="fadeIn second" name="login" placeholder="UserName">
             <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
             <input type="submit" class="fadeIn fourth" value="Log In">

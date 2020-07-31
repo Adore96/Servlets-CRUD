@@ -11,7 +11,9 @@ import java.io.PrintWriter;
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
-        out.println("Test doPost");
+        RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
+        RD.include(request,response);
+        System.out.println("DashBoard Response Called.");
 
 
     }

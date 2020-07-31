@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class RegisterServlet extends HttpServlet {
+public class DashboardServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
-        RequestDispatcher RD = request.getRequestDispatcher("/Register.jsp");
+        RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
         RD.include(request,response);
-        System.out.println("Register Response Called.");
+        System.out.println("DashBoard Response Called.");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
