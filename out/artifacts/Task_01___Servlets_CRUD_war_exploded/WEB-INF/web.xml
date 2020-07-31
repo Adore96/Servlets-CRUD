@@ -16,6 +16,10 @@
         <servlet-name>dashboardServlet</servlet-name>
         <servlet-class>com.adore96.DashboardServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>com.adore96.LogoutServlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
@@ -29,6 +33,10 @@
     <servlet-mapping>
         <servlet-name>dashboardServlet</servlet-name>
         <url-pattern>/SigninDashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/LogoutDashBoard</url-pattern>
     </servlet-mapping>
 
 

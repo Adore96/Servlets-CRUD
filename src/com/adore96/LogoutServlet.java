@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class LoginServlet extends HttpServlet {
+public class LogoutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
-        RD.include(request,response);
-        System.out.println("DashBoard Response Called.");
 
+        RequestDispatcher RD = request.getRequestDispatcher("/index.jsp");
+        RD.include(request,response);
+        System.out.println("Index Response Called.");
 
     }
 

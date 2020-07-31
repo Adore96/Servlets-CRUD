@@ -302,13 +302,14 @@
         </form>
 
         <!-- Remind Passowrd -->
-        <form action="Register" method="post">
-            <div id="formFooter">
-                <a class="underlineHover" href="#">Forgot Password?</a><br>
-<%--                <a class="underlineHover" href="Register.jsp">SignUp</a>--%>
+
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a><br>
+            <%--                <a class="underlineHover" href="Register.jsp">SignUp</a>--%>
+            <form action="Register" method="post">
                 <input type="submit" class="fadeIn fourth" value="Register Button">
-            </div>
-        </form>
+            </form>
+        </div>
 
 
     </div>
