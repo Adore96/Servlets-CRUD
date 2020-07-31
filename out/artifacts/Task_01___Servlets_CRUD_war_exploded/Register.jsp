@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Registration</title>
+    <title>Registration Form</title>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -291,13 +291,15 @@
         <!-- Icon -->
         <div class="fadeIn first">
             <br>
-            <h4>Log In</h4>
+            <h4>Registration Form</h4>
         </div>
 
         <!-- Login Form -->
-        <form action="Login" method="post">
-            <input type="text" id="uname" class="fadeIn second" name="login" placeholder="UserName">
-            <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password">
+        <form action="Register" method="post">
+            <input type="text" id="fname" class="fadeIn second" name="fname" placeholder="First Name">
+            <input type="text" id="lname" class="fadeIn third" name="lname" placeholder="Last Name">
+            <input type="text" id="uname" class="fadeIn second" name="uname" placeholder="User Name">
+            <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
             <input type="submit" class="fadeIn fourth" value="Log In">
         </form>
 
