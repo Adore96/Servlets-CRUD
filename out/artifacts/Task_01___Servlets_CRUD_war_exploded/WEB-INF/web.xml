@@ -20,6 +20,10 @@
         <servlet-name>logoutServlet</servlet-name>
         <servlet-class>com.adore96.LogoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>indexServlet</servlet-name>
+        <servlet-class>com.adore96.IndexServlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
@@ -28,15 +32,19 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
-        <url-pattern>/registerButton</url-pattern>
+        <url-pattern>/Registration</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>dashboardServlet</servlet-name>
-        <url-pattern>/Signin</url-pattern>
+        <url-pattern>/Dashboard</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>logoutServlet</servlet-name>
         <url-pattern>/LogoutDashBoard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>indexServlet</servlet-name>
+        <url-pattern>/Login</url-pattern>
     </servlet-mapping>
 
 

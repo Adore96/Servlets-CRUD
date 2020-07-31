@@ -295,7 +295,7 @@
         </div>
 
         <!-- Login Form -->
-        <form action="signinForm" method="post">
+        <form action="Login" method="post">
             <input type="text" id="fname" class="fadeIn second" name="fname" placeholder="First Name">
             <input type="text" id="lname" class="fadeIn third" name="lname" placeholder="Last Name">
             <input type="text" id="telephone" class="fadeIn third" name="telephone" placeholder="Mobile Number">
