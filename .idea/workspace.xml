@@ -7,13 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,17 +52,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.371">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DashBoard.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.371" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/DashBoard.jsp" />
       <deployment>
@@ -202,6 +186,7 @@
       <workItem from="1596026135540" duration="18000" />
       <workItem from="1596077011482" duration="1970000" />
       <workItem from="1596087369623" duration="11142000" />
+      <workItem from="1596162959680" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>

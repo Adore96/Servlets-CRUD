@@ -13,7 +13,7 @@ public class LoginServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("Test doPost");
 
-        RequestDispatcher RD = request.getRequestDispatcher("/");
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

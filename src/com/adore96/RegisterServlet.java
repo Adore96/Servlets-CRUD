@@ -15,7 +15,6 @@ public class RegisterServlet extends HttpServlet {
 
         RequestDispatcher RD = request.getRequestDispatcher("/Register.jsp");
         RD.include(request,response);
-
         System.out.println("Register Response Called.");
     }
 
