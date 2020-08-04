@@ -296,8 +296,8 @@
 
         <!-- Login Form -->
         <form action="Dashboard" method="post">
-            <input type="text" id="uname" class="fadeIn second" name="login" placeholder="UserName">
-            <input type="text" id="password" class="fadeIn third" name="login" placeholder="Password">
+            <input type="text" id="uname" class="fadeIn second" name="uname" placeholder="UserName">
+            <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
             <input type="submit" class="fadeIn fourth" value="Log In">
         </form>
 

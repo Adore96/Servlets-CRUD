@@ -22,20 +22,15 @@ public class IndexServlet extends HttpServlet {
         student.setUsername(username);
         student.setPassword(password);
 
-        System.out.println(fname+" /// "+lname);
-        System.out.println(student);
-//        StudentInfo studentInfo = new StudentInfo(fname,lname,uname,password,telephone);
         DatabaseConnection databaseConnection = new DatabaseConnection();
-        databaseConnection.InsertValues(student);
-
-
+        databaseConnection.registerStudent(student);
 
         RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
         RD.include(request,response);
         System.out.println("Index Response Called.");
     }
 
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//
-//    }
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    }
 }

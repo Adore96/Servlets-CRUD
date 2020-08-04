@@ -1,43 +1,14 @@
 package com.adore96;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import java.sql.*;
 
 public class DatabaseConnection {
     static Connection con = null;
     static String url;
-    private static final String sql ="insert into student"
-            + "(fname, lname, username, password,telephone) values" + "(?,?,?,?,?);";
-//    private String url = "jdbc:mysql://localhost:3306/taskone";
-//    private String dbuname = "root";
-//    private String password = "";
-//    private String dbdriver = "com.mysql.cj.jdbc.Driver";
 
-//    Connection con = null;
 
-//    public void loadDriver(String dbdriver){
-//        try {
-//            System.out.println();
-//            System.out.println("dbdriver: "+dbdriver);
-//            Class.forName(dbdriver);
-//            System.out.println("Database Driver loaded Successfully.");
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            System.out.println(e);
-//            System.out.println("Error in loadDriver");
-//        }
-//    }
-//
-//    public Connection getConnection() {
-//        Connection con = null;
-//        try {
-//            con = DriverManager.getConnection(url, dbuname, password);
-//            System.out.println("Connection Success");
-//        } catch (SQLException throwables) {
-//            throwables.printStackTrace();
-//            System.out.println(throwables);
-//        }
-//        return con;
-//    }
 
     public static Connection getConnection()
     {
@@ -52,26 +23,25 @@ public class DatabaseConnection {
             {
                 con = DriverManager.getConnection(url,"root","");
                 System.out.println("connected to db");
-
             }
-
             catch (SQLException ex)
             {
                 System.out.println(ex);
                 ex.printStackTrace();
             }
         }
-
         catch(ClassNotFoundException e)
         {
             System.out.println(e);
         }
-
         return con;
     }
 
-    public void InsertValues(StudentInfo studentInfo) {
-//        loadDriver(dbdriver);
+    public void registerStudent(StudentInfo studentInfo) {
+
+        final String sql ="insert into student"
+                + "(fname, lname, username, password,telephone) values" + "(?,?,?,?,?);";
+
         System.out.println(studentInfo);
         con = getConnection();
 
@@ -85,12 +55,37 @@ public class DatabaseConnection {
             ps.executeUpdate();
             String result = "Data was inserted Successfully";
             System.out.println(result);
-
-        } catch (Exception e){
-            String result = "Data was not inserted Successfully";
+        }
+        catch (Exception e){
+            String result = "Data was not inserted.";
             System.out.println(result);
             System.out.println(e);
         }
     }
 
+    public void logIn(StudentInfo studentInfo) {
+
+        final String sql ="select * from student where username = ? and password = ?";
+
+        System.out.println(studentInfo);
+        con = getConnection();
+        try {
+            PreparedStatement ps1 = con.prepareStatement(sql);
+            ps1.setString(1,studentInfo.getUsername());
+            ps1.setString(2,studentInfo.getPassword());
+            ResultSet rs = ps1.executeQuery();
+
+            if (rs.next()) {
+                System.out.println("success");
+            } else {
+                System.out.println("error");
+            }
+        }
+
+        catch (Exception e){
+            String result = "Data was not inserted.";
+            System.out.println(result);
+            System.out.println(e);
+        }
+    }
 }
