@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 public class LogoutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher RD = request.getRequestDispatcher("/index.jsp");
+        RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
         RD.include(request,response);
         System.out.println("Index Response Called.");
 

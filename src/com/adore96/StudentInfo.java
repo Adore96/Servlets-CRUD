@@ -1,7 +1,7 @@
 package com.adore96;
 
 public class StudentInfo {
-    private String fname , lname , uname , password , telephone ;
+    private String fname , lname , username , password , telephone ;
 
 
     public StudentInfo() {
@@ -23,12 +23,12 @@ public class StudentInfo {
         this.lname = lname;
     }
 
-    public String getUname() {
-        return uname;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUname(String uname) {
-        this.uname = uname;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -50,7 +50,7 @@ public class StudentInfo {
     public StudentInfo(String fname, String lname, String uname, String password, String telephone) {
         this.fname = fname;
         this.lname = lname;
-        this.uname = uname;
+        this.username = uname;
         this.password = password;
         this.telephone = telephone;
     }
