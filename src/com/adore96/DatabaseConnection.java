@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
     private String url = "jdbc:mysql://localhost:3306/taskone";
-    private String dbuname = "";
+    private String dbuname = "root";
     private String password = "";
     private String dbdriver = "com.mysql.cj.jdbc.Driver";
 
