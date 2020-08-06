@@ -15,6 +15,7 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session = request.getSession(false);
         System.out.println("Session username : "+session.getAttribute("username"));
         session.invalidate();
+//        watch a youtube video for session closing
 //        RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
 //        RD.include(request,response);
 //        System.out.println("Index Response Called.");
