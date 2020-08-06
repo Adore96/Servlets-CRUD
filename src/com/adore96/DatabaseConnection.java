@@ -10,14 +10,11 @@ public class DatabaseConnection {
     static Connection con = null;
     static String url;
 
-
-
     public static Connection getConnection()
     {
         try
         {
              url = "jdbc:mysql://localhost:3306/taskone?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-
             // assuming "DataSource" is your DataSource name
             System.out.println("DB URL Called");
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -113,26 +110,27 @@ public class DatabaseConnection {
         }
     }
 
-    public void selectAllUsers(){
-//        List<User> users = new ArrayList<>();\
+    public List<StudentInfo> ShowTable(){
+        List<StudentInfo> studentInfos = new ArrayList<>();
         final String sql ="select * from student";
-        // Establishing the connection
+
         try {
             con = getConnection();
             PreparedStatement prepareStatement = con.prepareStatement(sql);
-            // execute the query or update the query
             ResultSet rs = prepareStatement.executeQuery();
 
             while (rs.next()) {
-//                int id = rs.getInt("id");
-                String username = rs.getString("fname");
-                String password = rs.getString("lname");
-                System.out.println("fname :"+username+" Lname : "+password);
-//                String department = rs.getString("department");
+                String fname = rs.getString("fname");
+                String lname = rs.getString("lname");
+                String username = rs.getString("username");
+                String password = rs.getString("password");
+                String telephone = rs.getString("telephone");
+                studentInfos.add(new StudentInfo(fname , lname , username , password , telephone));
             }
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println(e);
         }
+        return studentInfos;
     }
 }

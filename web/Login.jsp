@@ -299,7 +299,6 @@
             <input type="text" id="uname" class="fadeIn second" name="uname" placeholder="UserName">
             <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
             <input type="submit" class="fadeIn fourth" value="Log In">
-
         </form>
 
         <!-- Remind Passowrd -->
@@ -310,7 +309,7 @@
 <%--            <form action="Registration" method="post">--%>
 <%--                <input type="submit" class="fadeIn fourth" value="Register Button">--%>
 <%--            </form>--%>
-            <a class="underlineHover" href="Register.jsp">New User?></a><br>
+            <a class="underlineHover" href="Register.jsp">New User? Register Here.</a><br>
         </div>
 
 

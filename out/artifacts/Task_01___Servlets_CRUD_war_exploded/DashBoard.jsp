@@ -5,10 +5,11 @@
   Time: 4:17 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@page import="java.sql.DriverManager"%>
-<%@page import="java.sql.ResultSet"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.DriverManager" %>
+<%@page import="java.sql.ResultSet" %>
+<%@page import="java.sql.Statement" %>
+<%@page import="java.sql.Connection" %>
+<%@ page import="com.adore96.DatabaseConnection" %>
 <%
     String driver = "com.mysql.jdbc.Driver";
     String connectionUrl = "jdbc:mysql://localhost:3306/taskone?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
@@ -29,7 +30,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+    <title>DashBoard</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -362,18 +363,22 @@
                     <th>Mobile</th>
                 </tr>
                 <%
-                    try{
-                        connection = DriverManager.getConnection(connectionUrl,"root","");
-                        statement=connection.createStatement();
-                        String sql ="select * from student";
+                    try {
+                        connection = DriverManager.getConnection(connectionUrl, "root", "");
+                        statement = connection.createStatement();
+                        String sql = "select * from student";
                         resultSet = statement.executeQuery(sql);
-                        while(resultSet.next()){
+                        while (resultSet.next()) {
                 %>
                 <tr>
-                    <td><%=resultSet.getString("fname") %></td>
-                    <td><%=resultSet.getString("lname") %></td>
-                    <td><%=resultSet.getString("username") %></td>
-                    <td><%=resultSet.getString("telephone") %></td>
+                    <td><%=resultSet.getString("fname") %>
+                    </td>
+                    <td><%=resultSet.getString("lname") %>
+                    </td>
+                    <td><%=resultSet.getString("username") %>
+                    </td>
+                    <td><%=resultSet.getString("telephone") %>
+                    </td>
                     <td>
                         <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
                                                                                          data-toggle="tooltip"
@@ -394,14 +399,14 @@
 
             </table>
             <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                <div class="hint-text">Showing <b>1</b> out of <b>1</b> Pages</div>
                 <ul class="pagination">
                     <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item active" ><a href="#" class="page-link">1</a></li>
+<%--                    <li class="page-item"><a href="#" class="page-link">2</a></li>--%>
+<%--                    <li class="page-item "><a href="#" class="page-link">3</a></li>--%>
+<%--                    <li class="page-item"><a href="#" class="page-link">4</a></li>--%>
+<%--                    <li class="page-item"><a href="#" class="page-link">5</a></li>--%>
                     <li class="page-item"><a href="#" class="page-link">Next</a></li>
                 </ul>
             </div>
@@ -413,7 +418,7 @@
 <div id="addEmployeeModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form>
+            <form action="AddStudent" method="post">
                 <div class="modal-header">
                     <h4 class="modal-title">Add Student</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -421,23 +426,23 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label>First Name</label>
-                        <input type="text" class="form-control" required>
+                        <input id="fname" name="fname" type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Last Name</label>
-                        <input type="text" class="form-control" required>
+                        <input  id="lname" name="lname" type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <label>UserName</label>
-                        <input type="text" class="form-control" required>
+                        <label>Mobile Number</label>
+                        <input id="telephone" name="telephone" type="number" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input id="uname" name="uname"  type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Phone</label>
-                        <input type="text" class="form-control" required>
+                        <input id="password" name="password" type="password" class="form-control" required>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -510,7 +515,7 @@
 <div id="deleteEmployeeModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form>
+            <form method="post" action="DeleteUser?username=halo">
                 <div class="modal-header">
                     <h4 class="modal-title">Delete Student</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

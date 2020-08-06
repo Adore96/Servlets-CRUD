@@ -24,6 +24,14 @@
         <servlet-name>loginServlet</servlet-name>
         <servlet-class>com.adore96.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>deleteUserServlet</servlet-name>
+        <servlet-class>com.adore96.DeleteUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addStudentServlet</servlet-name>
+        <servlet-class>com.adore96.AddStudentServlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
@@ -45,6 +53,14 @@
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteUserServlet</servlet-name>
+        <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addStudentServlet</servlet-name>
+        <url-pattern>/AddStudent</url-pattern>
     </servlet-mapping>
 
 

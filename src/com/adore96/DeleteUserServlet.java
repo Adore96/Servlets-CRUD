@@ -6,25 +6,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
-public class LoginServlet extends HttpServlet {
+public class DeleteUserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         StudentInfo student = new StudentInfo();
+        String username = request.getParameter("uname");
 
-        student.setUsername(request.getParameter("uname"));
-        student.setPassword(request.getParameter("password"));
+        student.setUsername(username);
 
         DatabaseConnection databaseConnection = new DatabaseConnection();
         List<StudentInfo> listUser = databaseConnection.ShowTable();
-        System.out.println("check :"+listUser.get(1));
-        databaseConnection.logIn(student);
+        System.out.println(listUser.get(1));
 
-        RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
+        RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
         RD.include(request,response);
-        System.out.println("DashBoard Response Called.");
+        System.out.println("Index Response Called.");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
