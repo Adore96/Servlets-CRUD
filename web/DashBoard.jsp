@@ -336,11 +336,11 @@
             <table class="table table-striped table-hover">
                 <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
                     <th>Address</th>
-                    <th>Phone</th>
-                    <th>Actions</th>
+                    <th>Mobile</th>
                 </tr>
                 </thead>
                 <tbody>

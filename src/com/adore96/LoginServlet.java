@@ -17,13 +17,12 @@ public class LoginServlet extends HttpServlet {
         student.setPassword(request.getParameter("password"));
 
         DatabaseConnection databaseConnection = new DatabaseConnection();
+        databaseConnection.selectAllUsers();
         databaseConnection.logIn(student);
 
         RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
         RD.include(request,response);
         System.out.println("DashBoard Response Called.");
-
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

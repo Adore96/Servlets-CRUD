@@ -11,20 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/IndexServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/IndexServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/DashboardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/DashboardServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/IndexServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/adore96/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/DashBoard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/DashBoard.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +216,7 @@
       <workItem from="1596508972433" duration="1722000" />
       <workItem from="1596510733501" duration="15461000" />
       <workItem from="1596530847673" duration="12171000" />
-      <workItem from="1596682702720" duration="4492000" />
+      <workItem from="1596682702720" duration="7856000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
