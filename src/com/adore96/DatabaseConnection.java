@@ -9,6 +9,7 @@ import java.util.List;
 public class DatabaseConnection {
     static Connection con = null;
     static String url;
+    static boolean status;
 
     public static Connection getConnection()
     {
@@ -63,7 +64,7 @@ public class DatabaseConnection {
         }
     }
 
-    public void logIn(StudentInfo studentInfo) {
+    public boolean logIn(StudentInfo studentInfo) {
         final String sql ="select * from student where username = ? and password = ?";
         System.out.println(studentInfo);
         con = getConnection();
@@ -75,8 +76,10 @@ public class DatabaseConnection {
 
             if (rs.next()) {
                 System.out.println("Login Success");
+                status = true;
             } else {
                 System.out.println("Login Error");
+                status = false;
             }
             con.close();
         }
@@ -85,6 +88,7 @@ public class DatabaseConnection {
             System.out.println(result);
             System.out.println(e);
         }
+        return status;
     }
 
     public void DeleteUser(StudentInfo studentInfo) {
