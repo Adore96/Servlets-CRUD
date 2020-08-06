@@ -12,11 +12,13 @@ import java.io.PrintWriter;
 public class LogoutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        HttpSession session = request.getSession();
+        HttpSession session = request.getSession(false);
+        System.out.println("Session username : "+session.getAttribute("username"));
         session.invalidate();
-        RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
+//        RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
 //        RD.include(request,response);
-        System.out.println("Index Response Called.");
+//        System.out.println("Index Response Called.");
+        response.sendRedirect(request.getContextPath() + "/Login.jsp");
 
     }
 
