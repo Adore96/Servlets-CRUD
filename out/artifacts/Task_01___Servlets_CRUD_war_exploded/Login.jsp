@@ -295,10 +295,11 @@
         </div>
 
         <!-- Login Form -->
-        <form action="Dashboard" method="post">
+        <form action="Login" method="post">
             <input type="text" id="uname" class="fadeIn second" name="uname" placeholder="UserName">
             <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
             <input type="submit" class="fadeIn fourth" value="Log In">
+
         </form>
 
         <!-- Remind Passowrd -->
@@ -306,9 +307,10 @@
         <div id="formFooter">
             <a class="underlineHover" href="#">Forgot Password?</a><br>
             <%--                <a class="underlineHover" href="Register.jsp">SignUp</a>--%>
-            <form action="Registration" method="post">
-                <input type="submit" class="fadeIn fourth" value="Register Button">
-            </form>
+<%--            <form action="Registration" method="post">--%>
+<%--                <input type="submit" class="fadeIn fourth" value="Register Button">--%>
+<%--            </form>--%>
+            <a class="underlineHover" href="Register.jsp">New User?></a><br>
         </div>
 
 

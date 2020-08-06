@@ -76,12 +76,35 @@ public class DatabaseConnection {
             ResultSet rs = ps1.executeQuery();
 
             if (rs.next()) {
-                System.out.println("success");
+                System.out.println("Login Success");
             } else {
-                System.out.println("error");
+                System.out.println("Login Error");
             }
         }
+        catch (Exception e){
+            String result = "Data was not inserted.";
+            System.out.println(result);
+            System.out.println(e);
+        }
+    }
 
+    public void DeleteUser(StudentInfo studentInfo) {
+
+        final String sql ="delete from student where username =?";
+
+        System.out.println(studentInfo);
+        con = getConnection();
+        try {
+            PreparedStatement ps1 = con.prepareStatement(sql);
+            ps1.setString(1,studentInfo.getUsername());
+            ResultSet rs = ps1.executeQuery();
+
+            if (rs.next()) {
+                System.out.println("Delete Success");
+            } else {
+                System.out.println("Error Occured in Deleting the user.");
+            }
+        }
         catch (Exception e){
             String result = "Data was not inserted.";
             System.out.println(result);

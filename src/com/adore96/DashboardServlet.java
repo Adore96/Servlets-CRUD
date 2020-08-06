@@ -10,14 +10,6 @@ import java.io.PrintWriter;
 
 public class DashboardServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        StudentInfo student = new StudentInfo();
-
-        student.setUsername(request.getParameter("uname"));
-        student.setPassword(request.getParameter("password"));
-
-        DatabaseConnection databaseConnection = new DatabaseConnection();
-        databaseConnection.logIn(student);
-
         RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
         RD.include(request,response);
         System.out.println("DashBoard Response Called.");

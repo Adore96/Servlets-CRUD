@@ -21,8 +21,8 @@
         <servlet-class>com.adore96.LogoutServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>indexServlet</servlet-name>
-        <servlet-class>com.adore96.IndexServlet</servlet-class>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.adore96.LoginServlet</servlet-class>
     </servlet>
 
 
@@ -32,7 +32,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>registerServlet</servlet-name>
-        <url-pattern>/Registration</url-pattern>
+        <url-pattern>/Register</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>dashboardServlet</servlet-name>
@@ -43,7 +43,7 @@
         <url-pattern>/LogoutDashBoard</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>indexServlet</servlet-name>
+        <servlet-name>loginServlet</servlet-name>
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
 

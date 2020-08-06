@@ -10,10 +10,25 @@ import java.io.PrintWriter;
 
 public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        PrintWriter out = response.getWriter();
-        RequestDispatcher RD = request.getRequestDispatcher("/Register.jsp");
+        StudentInfo student = new StudentInfo();
+        String fname = request.getParameter("fname");
+        String lname = request.getParameter("lname");
+        String telephone = request.getParameter("telephone");
+        String username = request.getParameter("uname");
+        String password = request.getParameter("password");
+
+        student.setFname(fname);
+        student.setLname(lname);
+        student.setTelephone(telephone);
+        student.setUsername(username);
+        student.setPassword(password);
+
+        DatabaseConnection databaseConnection = new DatabaseConnection();
+        databaseConnection.registerStudent(student);
+
+        RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
         RD.include(request,response);
-        System.out.println("Register Response Called.");
+        System.out.println("Index Response Called.");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
