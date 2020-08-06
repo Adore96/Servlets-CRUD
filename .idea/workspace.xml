@@ -9,21 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/Register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/DashboardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/DashboardServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/DatabaseConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/IndexServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/IndexServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/DashboardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/DashboardServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/DatabaseConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/IndexServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/adore96/IndexServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/DashboardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/DashboardServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/IndexServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Login.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,7 +207,7 @@
       <workItem from="1596162959680" duration="27143000" />
       <workItem from="1596508972433" duration="1722000" />
       <workItem from="1596510733501" duration="15461000" />
-      <workItem from="1596530847673" duration="11955000" />
+      <workItem from="1596530847673" duration="12171000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
@@ -289,54 +275,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596521258503" />
-    <state width="1029" height="425" key="GridCell.Tab.0.bottom" timestamp="1596541945112">
+    <state width="1029" height="97" key="GridCell.Tab.0.bottom" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596541945112" />
-    <state width="1029" height="425" key="GridCell.Tab.0.center" timestamp="1596541945112">
+    <state width="1029" height="97" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.0.center" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596541945112" />
-    <state width="1029" height="425" key="GridCell.Tab.0.left" timestamp="1596541945112">
+    <state width="1029" height="97" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.0.left" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596541945112" />
-    <state width="1029" height="425" key="GridCell.Tab.0.right" timestamp="1596541945112">
+    <state width="1029" height="97" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.0.right" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596541945112" />
-    <state width="1029" height="425" key="GridCell.Tab.1.bottom" timestamp="1596541945046">
+    <state width="1029" height="97" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.1.bottom" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
-    <state width="1029" height="425" key="GridCell.Tab.1.center" timestamp="1596541945046">
+    <state width="1029" height="97" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.1.center" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
-    <state width="1029" height="425" key="GridCell.Tab.1.left" timestamp="1596541945046">
+    <state width="1029" height="97" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.1.left" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
-    <state width="1029" height="425" key="GridCell.Tab.1.right" timestamp="1596541945046">
+    <state width="1029" height="97" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.1.right" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
-    <state width="1029" height="425" key="GridCell.Tab.2.bottom" timestamp="1596541945046">
+    <state width="1029" height="97" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.2.bottom" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
-    <state width="1029" height="425" key="GridCell.Tab.2.center" timestamp="1596541945046">
+    <state width="1029" height="97" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.2.center" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
-    <state width="1029" height="425" key="GridCell.Tab.2.left" timestamp="1596541945046">
+    <state width="1029" height="97" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.2.left" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
-    <state width="1029" height="425" key="GridCell.Tab.2.right" timestamp="1596541945046">
+    <state width="1029" height="97" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
+    <state width="1029" height="97" key="GridCell.Tab.2.right" timestamp="1596544816863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1029" height="425" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
+    <state width="1029" height="97" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1596544816863" />
     <state width="1029" height="425" key="GridCell.Tab.3.bottom" timestamp="1596541945046">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
