@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/adore96/LoginServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adore96/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adore96/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/DashBoard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/DashBoard.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +213,7 @@
       <workItem from="1596508972433" duration="1722000" />
       <workItem from="1596510733501" duration="15461000" />
       <workItem from="1596530847673" duration="12171000" />
-      <workItem from="1596682702720" duration="7856000" />
+      <workItem from="1596682702720" duration="9295000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
@@ -280,6 +277,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="465" y="234" key="DetectedRootsChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1596197054357" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1596692614268">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1596692614268" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596521258503">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

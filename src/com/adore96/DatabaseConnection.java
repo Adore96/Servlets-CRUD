@@ -17,6 +17,7 @@ public class DatabaseConnection {
         try
         {
              url = "jdbc:mysql://localhost:3306/taskone?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+
             // assuming "DataSource" is your DataSource name
             System.out.println("DB URL Called");
             Class.forName("com.mysql.cj.jdbc.Driver");
