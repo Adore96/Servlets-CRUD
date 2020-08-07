@@ -6,35 +6,40 @@
 
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>com.controller.LoginServlet</servlet-class>
+        <servlet-class>com.controller.logInServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>registerServlet</servlet-name>
-        <servlet-class>com.controller.RegisterServlet</servlet-class>
+        <servlet-class>com.controller.registerServlet</servlet-class>
     </servlet>
 <!--    <servlet>-->
 <!--        <servlet-name>dashboardServlet</servlet-name>-->
-<!--        <servlet-class>com.controller.DashboardServlet</servlet-class>-->
+<!--        <servlet-class>com.controller.dashBoardServlet</servlet-class>-->
 <!--    </servlet>-->
     <servlet>
         <servlet-name>logoutServlet</servlet-name>
-        <servlet-class>com.controller.LogoutServlet</servlet-class>
+        <servlet-class>com.controller.logOutServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>loginServlet</servlet-name>
-        <servlet-class>com.controller.LoginServlet</servlet-class>
+        <servlet-class>com.controller.logInServlet</servlet-class>
     </servlet>
+    
     <servlet>
-        <servlet-name>deleteUserServlet</servlet-name>
-        <servlet-class>com.controller.DeleteUserServlet</servlet-class>
+        <servlet-name>dashboardServlet</servlet-name>
+        <servlet-class>com.controller.dashBoardServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>addStudentServlet</servlet-name>
-        <servlet-class>com.controller.AddStudentServlet</servlet-class>
+        <servlet-class>com.controller.addStudentServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>dashboardServlet</servlet-name>
-        <servlet-class>com.controller.DashboardServlet</servlet-class>
+        <servlet-name>editStudentServlet</servlet-name>
+        <servlet-class>com.controller.editStudentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deleteStudentServlet</servlet-name>
+        <servlet-class>com.controller.deleteStudentServlet</servlet-class>
     </servlet>
 
 
@@ -63,12 +68,16 @@
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>deleteUserServlet</servlet-name>
-        <url-pattern>/DeleteUser</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>addStudentServlet</servlet-name>
         <url-pattern>/AddStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editStudentServlet</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteStudentServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
     </servlet-mapping>
 
 

@@ -1,7 +1,7 @@
 package com.dao;
 
-import com.db.DatabaseConnection;
-import com.model.StudentInfo;
+import com.db.databaseConnection;
+import com.model.studentInfo;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,10 +12,10 @@ import java.util.List;
 
 public class userDAO {
     static Connection con = null;
-    DatabaseConnection databaseConnection = new DatabaseConnection();
+    com.db.databaseConnection databaseConnection = new databaseConnection();
     static boolean status;
 
-    public void registerStudent(StudentInfo studentInfo) {
+    public void registerStudent(studentInfo studentInfo) {
         final String sql ="insert into student"
                 + "(fname, lname, username, password,telephone) values" + "(?,?,?,?,?);";
 
@@ -40,7 +40,7 @@ public class userDAO {
         }
     }
 
-    public boolean logIn(StudentInfo studentInfo) {
+    public boolean logIn(studentInfo studentInfo) {
         final String sql ="select * from student where username = ? and password = ?";
         System.out.println(studentInfo);
         con = databaseConnection.getConnection();
@@ -68,15 +68,18 @@ public class userDAO {
         return status;
     }
 
-    public void DeleteUser(StudentInfo studentInfo) throws SQLException {
+    public void DeleteUser(studentInfo studentInfo) throws SQLException {
         final String sql ="delete from student where username =?";
         System.out.println(studentInfo);
         con = databaseConnection.getConnection();
 
         try {
-            PreparedStatement ps1 = con.prepareStatement(sql);
-            ps1.setString(1,studentInfo.getUsername());
-            ResultSet rs = ps1.executeQuery();
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1,studentInfo.getUsername());
+            ps.executeUpdate();
+            String result = "Data was deleted Successfully";
+            System.out.println(result);
+            con.close();
 
             if (rs.next()) {
                 System.out.println("Delete Success");
@@ -92,8 +95,8 @@ public class userDAO {
         }
     }
 
-    public List<StudentInfo> ShowTable(){
-        List<StudentInfo> studentInfos = new ArrayList<>();
+    public List<studentInfo> ShowTable(){
+        List<studentInfo> studentInfos = new ArrayList<>();
         final String sql ="select * from student";
         con = databaseConnection.getConnection();
 
@@ -107,7 +110,7 @@ public class userDAO {
                 String username = rs.getString("username");
                 String password = rs.getString("password");
                 String telephone = rs.getString("telephone");
-                studentInfos.add(new StudentInfo(fname , lname , username , password , telephone));
+                studentInfos.add(new studentInfo(fname , lname , username , password , telephone));
             }
         } catch (SQLException e) {
             e.printStackTrace();

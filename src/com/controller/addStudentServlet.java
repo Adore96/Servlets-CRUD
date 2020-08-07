@@ -1,8 +1,8 @@
 package com.controller;
 
 import com.dao.userDAO;
-import com.db.DatabaseConnection;
-import com.model.StudentInfo;
+import com.db.databaseConnection;
+import com.model.studentInfo;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,9 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AddStudentServlet extends HttpServlet {
+public class addStudentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        StudentInfo student = new StudentInfo();
+        studentInfo student = new studentInfo();
         userDAO userDAO = new userDAO();
 
         String fname = request.getParameter("fname");
@@ -28,7 +28,7 @@ public class AddStudentServlet extends HttpServlet {
         student.setUsername(username);
         student.setPassword(password);
 
-        DatabaseConnection databaseConnection = new DatabaseConnection();
+        databaseConnection databaseConnection = new databaseConnection();
         userDAO.registerStudent(student);
 
         RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");

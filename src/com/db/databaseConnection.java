@@ -1,12 +1,8 @@
 package com.db;
 
-import com.model.StudentInfo;
-
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
 
-public class DatabaseConnection {
+public class databaseConnection {
     static Connection con = null;
     static String url;
 

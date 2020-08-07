@@ -9,7 +9,7 @@
 <%@page import="java.sql.ResultSet" %>
 <%@page import="java.sql.Statement" %>
 <%@page import="java.sql.Connection" %>
-<%@ page import="com.db.DatabaseConnection" %>
+<%@ page import="com.db.databaseConnection" %>
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -362,44 +362,24 @@
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Username</th>
-                    <th>Address</th>
                     <th>Mobile</th>
+                    <th>Actions</th>
                 </tr>
-                <%
-                    try {
-                        connection = DriverManager.getConnection(connectionUrl, "root", "");
-                        statement = connection.createStatement();
-                        String sql = "select * from student";
-                        resultSet = statement.executeQuery(sql);
-                        while (resultSet.next()) {
-                %>
-                <tr>
-                    <td><%=resultSet.getString("fname") %>
-                    </td>
-                    <td><%=resultSet.getString("lname") %>
-                    </td>
-                    <td><%=resultSet.getString("username") %>
-                    </td>
-                    <td><%=resultSet.getString("telephone") %>
-                    </td>
-                    <td>
-                        <a href="edit?username=<%=resultSet.getString("username")%>" class="edit" data-toggle="modal"><i
-                                href="edit?username=<%=resultSet.getString("username")%>" class="material-icons"
-                                data-toggle="tooltip"
-                                title="Edit">&#xE254;</i></a>
-                        <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-                                                                                             data-toggle="tooltip"
-                                                                                             title="Delete">&#xE872;</i></a>
-                    </td>
-                </tr>
-                <%
-                        }
-                        connection.close();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                %>
                 </thead>
+
+                <tbody>
+                <c:forEach var="user" items="${listUser}">
+                    <tr>
+                        <td><c:out value="${user.fname}"/></td>
+                        <td><c:out value="${user.lname}"/></td>
+                        <td><c:out value="${user.username}"/></td>
+                        <td><c:out value="${user.telephone}"/></td>
+                        <td><a href="edit?id=<c:out value='${user.username}'/>">Edit</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="delete?id=<c:out value='${user.username}'/>">Delete</a></td>
+                    </tr>
+                </c:forEach>
+                </tbody>
 
             </table>
             <div class="clearfix">
@@ -415,44 +395,43 @@
 </div>
 
 
-<div class="row">
-    <div class="container">
-        <h3 class="text-center">List of Users</h3>
-        <hr>
-        <div class="container text-left">
-            <form action="new">
-                <button type="submit" class="btn btn-success">New User</button>
-            </form>
-        </div>
-        <br>
-        <table class="table table-bordered">
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>Username</th>
-                <th>Department</th>
-                <th>Actions</th>
-            </tr>
-            </thead>
-            <tbody>
-            <c:forEach var="user" items="${listUser}">
-                <tr>
-                        <%--                    <td><c:out value="${user.id}" /></td>--%>
-                    <td><c:out value="${user.fname}"/></td>
-                    <td><c:out value="${user.lname}"/></td>
-                    <td><c:out value="${user.username}"/></td>
-                    <td><c:out value="${user.telephone}"/></td>
-                    <td><a href="edit?id=<c:out value='${user.username}'/>">Edit</a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="delete?id=<c:out value='${user.username}' />">Delete</a></td>
-                </tr>
-            </c:forEach>
-            <!-- } -->
-            </tbody>
+<%--<div class="row">--%>
+<%--    <div class="container">--%>
+<%--        <h3 class="text-center">List of Users</h3>--%>
+<%--        <hr>--%>
+<%--        <div class="container text-left">--%>
+<%--            <form action="new">--%>
+<%--                <button type="submit" class="btn btn-success">New User</button>--%>
+<%--            </form>--%>
+<%--        </div>--%>
+<%--        <br>--%>
+<%--        <table class="table table-bordered">--%>
+<%--            <thead>--%>
+<%--            <tr>--%>
+<%--                <th>ID</th>--%>
+<%--                <th>Username</th>--%>
+<%--                <th>Department</th>--%>
+<%--                <th>Actions</th>--%>
+<%--            </tr>--%>
+<%--            </thead>--%>
+<%--            <tbody>--%>
+<%--            <c:forEach var="user" items="${listUser}">--%>
+<%--                <tr>--%>
+<%--                    <td><c:out value="${user.fname}"/></td>--%>
+<%--                    <td><c:out value="${user.lname}"/></td>--%>
+<%--                    <td><c:out value="${user.username}"/></td>--%>
+<%--                    <td><c:out value="${user.telephone}"/></td>--%>
+<%--                    <td><a href="edit?id=<c:out value='${user.username}'/>">Edit</a>--%>
+<%--                        &nbsp;&nbsp;&nbsp;&nbsp;--%>
+<%--                        <a href="delete?id=<c:out value='${user.username}' />">Delete</a></td>--%>
+<%--                </tr>--%>
+<%--            </c:forEach>--%>
+<%--            <!-- } -->--%>
+<%--            </tbody>--%>
 
-        </table>
-    </div>
-</div>
+<%--        </table>--%>
+<%--    </div>--%>
+<%--</div>--%>
 
 <!-- Edit Modal HTML -->
 <div id="addEmployeeModal" class="modal fade">
