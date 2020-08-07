@@ -9,7 +9,10 @@
 <%@page import="java.sql.ResultSet" %>
 <%@page import="java.sql.Statement" %>
 <%@page import="java.sql.Connection" %>
-<%@ page import="com.adore96.DatabaseConnection" %>
+<%@ page import="com.db.DatabaseConnection" %>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <%
     String driver = "com.mysql.jdbc.Driver";
     String connectionUrl = "jdbc:mysql://localhost:3306/taskone?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
@@ -380,7 +383,7 @@
                     <td><%=resultSet.getString("telephone") %>
                     </td>
                     <td>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+                        <a href="edit?username=<%=resultSet.getString("username")%>" class="edit" data-toggle="modal"><i href="edit?username=<%=resultSet.getString("username")%>" class="material-icons"
                                                                                          data-toggle="tooltip"
                                                                                          title="Edit">&#xE254;</i></a>
                         <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
@@ -407,6 +410,43 @@
                 </ul>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="container">
+        <h3 class="text-center">List of Users</h3>
+        <hr>
+        <div class="container text-left">
+            <form action="new">
+                <button type="submit" class="btn btn-success">New User</button>
+            </form>
+        </div>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach var="user" items="${listUser}">
+                <tr>
+<%--                    <td><c:out value="${user.id}" /></td>--%>
+                    <td><c:out value="${user.username}" /></td>
+                    <td><c:out value="${user.department}" /></td>
+                    <td><a href="edit?id=<c:out value='${user.id}'/>">Edit</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="delete?id=<c:out value='${user.id}' />">Delete</a></td>
+                </tr>
+            </c:forEach>
+            <!-- } -->
+            </tbody>
+
+        </table>
     </div>
 </div>
 
@@ -456,7 +496,7 @@
         <div class="modal-content">
             <form action="LogoutDashBoard" method="post">
                 <div class="modal-header">
-                    <h4 class="modal-title">Logout </h4>
+                    <h4 class="modal-title">Logout</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -511,7 +551,7 @@
 <div id="deleteEmployeeModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" action="DeleteUser?username=halo">
+            <form method="post" action="DeleteUser?username=?">
                 <div class="modal-header">
                     <h4 class="modal-title">Delete Student</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

@@ -6,31 +6,31 @@
 
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>com.adore96.LoginServlet</servlet-class>
+        <servlet-class>com.controller.LoginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>registerServlet</servlet-name>
-        <servlet-class>com.adore96.RegisterServlet</servlet-class>
+        <servlet-class>com.controller.RegisterServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>dashboardServlet</servlet-name>
-        <servlet-class>com.adore96.DashboardServlet</servlet-class>
+        <servlet-class>com.controller.DashboardServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>logoutServlet</servlet-name>
-        <servlet-class>com.adore96.LogoutServlet</servlet-class>
+        <servlet-class>com.controller.LogoutServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>loginServlet</servlet-name>
-        <servlet-class>com.adore96.LoginServlet</servlet-class>
+        <servlet-class>com.controller.LoginServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>deleteUserServlet</servlet-name>
-        <servlet-class>com.adore96.DeleteUserServlet</servlet-class>
+        <servlet-class>com.controller.DeleteUserServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>addStudentServlet</servlet-name>
-        <servlet-class>com.adore96.AddStudentServlet</servlet-class>
+        <servlet-class>com.controller.AddStudentServlet</servlet-class>
     </servlet>
 
 
