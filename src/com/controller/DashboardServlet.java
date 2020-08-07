@@ -15,24 +15,16 @@ import java.util.List;
 public class DashboardServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        DatabaseConnection databaseConnection = new DatabaseConnection();
-        userDAO userDAO = new userDAO();
-
-
-        List<StudentInfo> listUser = userDAO.ShowTable();
-        request.setAttribute("listUser", listUser);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
-        dispatcher.forward(request, response);
-
-
-
-//        RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
-//        RD.include(request,response);
-//        System.out.println("DashBoard Response Called.");
+//        DatabaseConnection databaseConnection = new DatabaseConnection();
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        userDAO userDAO = new userDAO();
 
+        List<StudentInfo> listUser = userDAO.ShowTable();
+        request.setAttribute("listUser", listUser);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("DashBoard.jsp");
+        dispatcher.forward(request, response);
     }
 }

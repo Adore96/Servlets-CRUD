@@ -22,8 +22,8 @@ public class DeleteUserServlet extends HttpServlet {
         String username = request.getParameter("uname");
         student.setUsername(username);
 
-        List<StudentInfo> listUser = userDAO.ShowTable();
-        System.out.println(listUser.get(1));
+//        List<StudentInfo> listUser = userDAO.ShowTable();
+//        System.out.println(listUser.get(1));
 
         RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
         RD.include(request,response);

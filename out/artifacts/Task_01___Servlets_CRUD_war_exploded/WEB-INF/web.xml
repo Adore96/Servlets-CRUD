@@ -12,10 +12,10 @@
         <servlet-name>registerServlet</servlet-name>
         <servlet-class>com.controller.RegisterServlet</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>dashboardServlet</servlet-name>
-        <servlet-class>com.controller.DashboardServlet</servlet-class>
-    </servlet>
+<!--    <servlet>-->
+<!--        <servlet-name>dashboardServlet</servlet-name>-->
+<!--        <servlet-class>com.controller.DashboardServlet</servlet-class>-->
+<!--    </servlet>-->
     <servlet>
         <servlet-name>logoutServlet</servlet-name>
         <servlet-class>com.controller.LogoutServlet</servlet-class>
@@ -32,6 +32,10 @@
         <servlet-name>addStudentServlet</servlet-name>
         <servlet-class>com.controller.AddStudentServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>dashboardServlet</servlet-name>
+        <servlet-class>com.controller.DashboardServlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
@@ -44,8 +48,12 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>dashboardServlet</servlet-name>
-        <url-pattern>/Dashboard</url-pattern>
+        <url-pattern>/users</url-pattern>
     </servlet-mapping>
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>dashboardServlet</servlet-name>-->
+<!--        <url-pattern>/Dashboard</url-pattern>-->
+<!--    </servlet-mapping>-->
     <servlet-mapping>
         <servlet-name>logoutServlet</servlet-name>
         <url-pattern>/LogoutDashBoard</url-pattern>

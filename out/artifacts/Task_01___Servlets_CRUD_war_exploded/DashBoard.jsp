@@ -11,7 +11,7 @@
 <%@page import="java.sql.Connection" %>
 <%@ page import="com.db.DatabaseConnection" %>
 
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <%
     String driver = "com.mysql.jdbc.Driver";
@@ -383,9 +383,10 @@
                     <td><%=resultSet.getString("telephone") %>
                     </td>
                     <td>
-                        <a href="edit?username=<%=resultSet.getString("username")%>" class="edit" data-toggle="modal"><i href="edit?username=<%=resultSet.getString("username")%>" class="material-icons"
-                                                                                         data-toggle="tooltip"
-                                                                                         title="Edit">&#xE254;</i></a>
+                        <a href="edit?username=<%=resultSet.getString("username")%>" class="edit" data-toggle="modal"><i
+                                href="edit?username=<%=resultSet.getString("username")%>" class="material-icons"
+                                data-toggle="tooltip"
+                                title="Edit">&#xE254;</i></a>
                         <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
                                                                                              data-toggle="tooltip"
                                                                                              title="Delete">&#xE872;</i></a>
@@ -405,13 +406,14 @@
                 <div class="hint-text">Showing <b>1</b> out of <b>1</b> Pages</div>
                 <ul class="pagination">
                     <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item active" ><a href="#" class="page-link">1</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
                     <li class="page-item"><a href="#" class="page-link">Next</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="row">
     <div class="container">
@@ -435,12 +437,14 @@
             <tbody>
             <c:forEach var="user" items="${listUser}">
                 <tr>
-<%--                    <td><c:out value="${user.id}" /></td>--%>
-                    <td><c:out value="${user.username}" /></td>
-                    <td><c:out value="${user.department}" /></td>
-                    <td><a href="edit?id=<c:out value='${user.id}'/>">Edit</a>
+                        <%--                    <td><c:out value="${user.id}" /></td>--%>
+                    <td><c:out value="${user.fname}"/></td>
+                    <td><c:out value="${user.lname}"/></td>
+                    <td><c:out value="${user.username}"/></td>
+                    <td><c:out value="${user.telephone}"/></td>
+                    <td><a href="edit?id=<c:out value='${user.username}'/>">Edit</a>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="delete?id=<c:out value='${user.id}' />">Delete</a></td>
+                        <a href="delete?id=<c:out value='${user.username}' />">Delete</a></td>
                 </tr>
             </c:forEach>
             <!-- } -->
@@ -466,7 +470,7 @@
                     </div>
                     <div class="form-group">
                         <label>Last Name</label>
-                        <input  id="lname" name="lname" type="text" class="form-control" required>
+                        <input id="lname" name="lname" type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Mobile Number</label>
@@ -474,7 +478,7 @@
                     </div>
                     <div class="form-group">
                         <label>User Name</label>
-                        <input id="uname" name="uname"  type="text" class="form-control" required>
+                        <input id="uname" name="uname" type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Password</label>
