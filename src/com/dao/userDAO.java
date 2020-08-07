@@ -68,6 +68,7 @@ public class userDAO {
         return status;
     }
 
+
     public void DeleteUser(studentInfo studentInfo) throws SQLException {
         final String sql ="delete from student where username =?";
         System.out.println(studentInfo);
@@ -77,15 +78,7 @@ public class userDAO {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1,studentInfo.getUsername());
             ps.executeUpdate();
-            String result = "Data was deleted Successfully";
-            System.out.println(result);
-            con.close();
-
-            if (rs.next()) {
-                System.out.println("Delete Success");
-            } else {
-                System.out.println("Error Occurred in Deleting the user.");
-            }
+            System.out.println("Data was deleted Successfully");
             con.close();
         }
         catch (Exception e){
@@ -94,6 +87,7 @@ public class userDAO {
             System.out.println(e);
         }
     }
+
 
     public List<studentInfo> ShowTable(){
         List<studentInfo> studentInfos = new ArrayList<>();
@@ -118,4 +112,30 @@ public class userDAO {
         }
         return studentInfos;
     }
+
+    public void EditStudent(studentInfo studentInfo) {
+        final String sql ="update users set username = ?,password = ?,department = ?,valid = ? where id = ?;";
+
+        System.out.println(studentInfo);
+
+        con = databaseConnection.getConnection();
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1,studentInfo.getFname());
+            ps.setString(2,studentInfo.getLname());
+            ps.setString(3,studentInfo.getUsername());
+            ps.setString(4,studentInfo.getPassword());
+            ps.setString(5,studentInfo.getTelephone());
+            ps.executeUpdate();
+            String result = "Data was inserted Successfully";
+            System.out.println(result);
+            con.close();
+        }
+        catch (Exception e){
+            String result = "Data was not inserted.";
+            System.out.println(result);
+            System.out.println(e);
+        }
+    }
+
 }

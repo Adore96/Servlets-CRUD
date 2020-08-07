@@ -8,10 +8,10 @@ import java.io.IOException;
 
 public class editStudentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("helllo edit do post method");
+        //dont write anything here.
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("helllo edit do post method");
+        System.out.println("helllo edit do get method");
     }
 }
