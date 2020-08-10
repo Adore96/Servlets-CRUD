@@ -22,7 +22,11 @@ public class dashBoardServlet extends HttpServlet {
         userDAO userDAO = new userDAO();
 
         List<studentInfo> listUser = userDAO.ShowTable();
+//        List<studentInfo> listEditUser = userDAO.ShowEditTable();
+
+//        request.setAttribute("listEditUser",listEditUser);
         request.setAttribute("listUser", listUser);
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("DashBoard.jsp");
         dispatcher.forward(request, response);
     }

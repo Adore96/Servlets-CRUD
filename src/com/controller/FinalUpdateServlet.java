@@ -11,27 +11,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class addStudentServlet extends HttpServlet {
+public class FinalUpdateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        studentInfo student = new studentInfo();
+        studentInfo finalUpdateStudent = new studentInfo();
         userDAO userDAO = new userDAO();
 
         String fname = request.getParameter("fname");
         String lname = request.getParameter("lname");
-        String telephone = request.getParameter("telephone");
         String username = request.getParameter("uname");
         String password = request.getParameter("password");
+        String telephone = request.getParameter("telephone");
 
-        student.setFname(fname);
-        student.setLname(lname);
-        student.setTelephone(telephone);
-        student.setUsername(username);
-        student.setPassword(password);
+        finalUpdateStudent.setFname(fname);
+        finalUpdateStudent.setLname(lname);
+        finalUpdateStudent.setUsername(username);
+        finalUpdateStudent.setPassword(password);
+        finalUpdateStudent.setTelephone(telephone);
 
-        userDAO.registerStudent(student);
+        userDAO.finalUpdate(finalUpdateStudent);
 
-        RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
-        RD.include(request,response);
+        response.sendRedirect(request.getContextPath()+"/users");
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -5,29 +5,11 @@
   Time: 4:17 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@page import="java.sql.DriverManager" %>
-<%@page import="java.sql.ResultSet" %>
-<%@page import="java.sql.Statement" %>
-<%@page import="java.sql.Connection" %>
-<%@ page import="com.db.databaseConnection" %>
+
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<%
-    String driver = "com.mysql.jdbc.Driver";
-    String connectionUrl = "jdbc:mysql://localhost:3306/taskone?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-    String database = "taskone";
-    String userid = "root";
-    String password = "";
-    try {
-        Class.forName(driver);
-    } catch (ClassNotFoundException e) {
-        e.printStackTrace();
-    }
-    Connection connection = null;
-    Statement statement = null;
-    ResultSet resultSet = null;
-%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -374,9 +356,9 @@
                         <td><c:out value="${user.lname}"/></td>
                         <td><c:out value="${user.username}"/></td>
                         <td><c:out value="${user.telephone}"/></td>
-                        <td><a href="edit?id=<c:out value='${user.username}'/>">Edit</a>
+                        <td><a href="update?username=<c:out value='${user.username}'/>">Edit</a>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="delete?id=<c:out value='${user.username}'/>">Delete</a></td>
+                            <a href="delete?username=<c:out value='${user.username}'/>">Delete</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>

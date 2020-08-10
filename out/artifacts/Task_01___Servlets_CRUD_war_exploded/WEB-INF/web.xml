@@ -41,6 +41,10 @@
         <servlet-name>deleteStudentServlet</servlet-name>
         <servlet-class>com.controller.deleteStudentServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>finalUpdateServlet</servlet-name>
+        <servlet-class>com.controller.FinalUpdateServlet</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
@@ -73,11 +77,15 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>editStudentServlet</servlet-name>
-        <url-pattern>/edit</url-pattern>
+        <url-pattern>/update</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>deleteStudentServlet</servlet-name>
         <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>finalUpdateServlet</servlet-name>
+        <url-pattern>/FinalUpdate</url-pattern>
     </servlet-mapping>
 
 
