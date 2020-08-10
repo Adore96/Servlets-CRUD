@@ -28,30 +28,12 @@ public class deleteStudentServlet extends HttpServlet {
 
         try {
             userDAO.DeleteUser(studentInfo);
+            response.sendRedirect(request.getContextPath()+"/users");
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
             System.out.println("Error in delete student Servlet : "+throwables);
         }
-
-
-//        if(session!=null && session.getAttribute("username")!=null) {
-//            String action = request.getServletPath();
-//
-//            switch(action) {
-//                case "/delete":
-//                    try {
-//                        deleteUser(request, response);
-//                    } catch (SQLException e) {
-//                        e.printStackTrace();
-//                    }
-//                    break;
-//
-//            }
-//        }else {
-//            response.sendRedirect(request.getContextPath()+"/login.jsp");
-//            System.out.println("session is working in UserDelete");
-//        }
     }
 }
 

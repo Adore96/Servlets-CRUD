@@ -13,22 +13,24 @@ import java.io.IOException;
 
 public class FinalUpdateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        studentInfo finalUpdateStudent = new studentInfo();
+        studentInfo studentInfo = new studentInfo();
         userDAO userDAO = new userDAO();
 
         String fname = request.getParameter("fname");
         String lname = request.getParameter("lname");
-        String username = request.getParameter("uname");
+        String username = request.getParameter("username");
         String password = request.getParameter("password");
         String telephone = request.getParameter("telephone");
 
-        finalUpdateStudent.setFname(fname);
-        finalUpdateStudent.setLname(lname);
-        finalUpdateStudent.setUsername(username);
-        finalUpdateStudent.setPassword(password);
-        finalUpdateStudent.setTelephone(telephone);
+        System.out.println("FinalUpdate "+fname+"FinalUpdate "+"FinalUpdate "+lname+" FinalUpdate "+password);
 
-        userDAO.finalUpdate(finalUpdateStudent);
+        studentInfo.setFname(fname);
+        studentInfo.setLname(lname);
+        studentInfo.setUsername(username);
+        studentInfo.setPassword(password);
+        studentInfo.setTelephone(telephone);
+
+        userDAO.finalUpdate(studentInfo);
 
         response.sendRedirect(request.getContextPath()+"/users");
 

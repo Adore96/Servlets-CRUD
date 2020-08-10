@@ -31,7 +31,7 @@
     </servlet>
     <servlet>
         <servlet-name>addStudentServlet</servlet-name>
-        <servlet-class>com.controller.addStudentServlet</servlet-class>
+        <servlet-class>com.controller.AddStudentServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>editStudentServlet</servlet-name>

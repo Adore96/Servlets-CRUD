@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class addStudentServlet extends HttpServlet {
+public class AddStudentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         studentInfo student = new studentInfo();
         userDAO userDAO = new userDAO();
@@ -30,8 +30,8 @@ public class addStudentServlet extends HttpServlet {
 
         userDAO.registerStudent(student);
 
-        RequestDispatcher RD = request.getRequestDispatcher("/DashBoard.jsp");
-        RD.include(request,response);
+        response.sendRedirect(request.getContextPath()+"/users");
+//        RD.include(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

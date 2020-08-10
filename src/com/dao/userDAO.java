@@ -116,20 +116,21 @@ public class userDAO {
     }
 
     public void finalUpdate(studentInfo studentInfo) {
-        final String sql ="update users set fname = ?,lname = ?,username = ?,password = ? ,telephone = ? where username = ?";
+        final String sql ="UPDATE  student SET fname = ?,lname = ? ,password = ? ,telephone = ? WHERE username = ?";
 
         try {
             con = databaseConnection.getConnection();
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(6,studentInfo.getUsername());
+
+            System.out.println(studentInfo.getUsername()+"  "+studentInfo.getLname());
+
             ps.setString(1,studentInfo.getFname());
             ps.setString(2,studentInfo.getLname());
-            ps.setString(3,studentInfo.getUsername());
-            ps.setString(4,studentInfo.getPassword());
-            ps.setString(5,studentInfo.getTelephone());
+            ps.setString(3,studentInfo.getPassword());
+            ps.setString(4,studentInfo.getTelephone());
+            ps.setString(5,studentInfo.getUsername());
             ps.executeUpdate();
-            String result = "Data was Updated Successfully";
-            System.out.println(result);
+            System.out.println("Data was Updated Successfully");
             con.close();
         }
         catch (Exception e){
