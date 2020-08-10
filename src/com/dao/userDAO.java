@@ -114,7 +114,7 @@ public class userDAO {
     }
 
     public void EditStudent(studentInfo studentInfo) {
-        final String sql ="update users set username = ?,password = ?,department = ?,valid = ? where id = ?;";
+        final String sql ="update users set fname = ?,lname = ?,username = ?,password = ? ,telephone = ? where id = ?;";
 
         System.out.println(studentInfo);
 
@@ -127,8 +127,7 @@ public class userDAO {
             ps.setString(4,studentInfo.getPassword());
             ps.setString(5,studentInfo.getTelephone());
             ps.executeUpdate();
-            String result = "Data was inserted Successfully";
-            System.out.println(result);
+            System.out.println( "Data was Edited Successfully");
             con.close();
         }
         catch (Exception e){
