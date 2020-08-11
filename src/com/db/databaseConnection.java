@@ -13,7 +13,7 @@ public class databaseConnection {
         {
             url = "jdbc:mysql://localhost:3306/taskone?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection(url,"","");
+            con = DriverManager.getConnection(url,"root","");
             System.out.println("Connection Success.");
         }
         catch(ClassNotFoundException e)

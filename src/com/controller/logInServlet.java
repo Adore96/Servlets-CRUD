@@ -39,6 +39,8 @@ public class logInServlet extends HttpServlet {
             out.println("location='Login.jsp';");
             out.println("</script>");
         }
+        out.flush();
+        out.close();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
