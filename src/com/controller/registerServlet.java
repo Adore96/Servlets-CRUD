@@ -32,7 +32,6 @@ public class registerServlet extends HttpServlet {
 
         RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
         RD.include(request,response);
-        System.out.println("Index Response Called.");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

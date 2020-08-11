@@ -22,7 +22,6 @@ public class deleteStudentServlet extends HttpServlet {
         studentInfo studentInfo = new studentInfo();
 
         String username = request.getParameter("username");
-        System.out.println("DeleteStudent Servlet id : "+username);
 
         studentInfo.setUsername(username);
 

@@ -43,8 +43,8 @@ public class userDAO {
 
     public boolean logIn(studentInfo studentInfo) {
         final String sql ="select * from student where username = ? and password = ?";
-        System.out.println(studentInfo);
         con = databaseConnection.getConnection();
+        System.out.println("Connection : "+  con);
 
         try {
             PreparedStatement ps1 = con.prepareStatement(sql);
@@ -62,8 +62,7 @@ public class userDAO {
             con.close();
         }
         catch (Exception e){
-            String result = "Data was not inserted.";
-            System.out.println(result);
+            System.out.println("Data was not inserted.");
             System.out.println(e);
         }
         return status;
@@ -72,7 +71,6 @@ public class userDAO {
 
     public void DeleteUser(studentInfo studentInfo) throws SQLException {
         final String sql ="delete from student where username =?";
-        System.out.println("UserDAO.DeleteUser Details : "+studentInfo);
 
         try {
             con = databaseConnection.getConnection();
@@ -143,7 +141,6 @@ public class userDAO {
     public studentInfo ShowEditTable(studentInfo studentInfo){
 
         final String sql ="select * from student where username = ? ";
-        System.out.println("Show edit table in DAO");
 
         try {
             con = databaseConnection.getConnection();
@@ -165,7 +162,6 @@ public class userDAO {
             e.printStackTrace();
             System.out.println(e);
         }
-        System.out.println("Show edit table values: "+studentInfo.getFname()+" "+studentInfo.getLname()+" "+studentInfo.getPassword());
         return studentInfo;
     }
 

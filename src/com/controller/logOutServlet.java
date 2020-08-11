@@ -14,9 +14,6 @@ public class logOutServlet extends HttpServlet {
         System.out.println("Session username : "+session.getAttribute("username"));
         session.invalidate();
 
-//        RequestDispatcher RD = request.getRequestDispatcher("/Login.jsp");
-//        RD.include(request,response);
-//        System.out.println("Index Response Called.");
         response.sendRedirect(request.getContextPath() + "/Login.jsp");
     }
 

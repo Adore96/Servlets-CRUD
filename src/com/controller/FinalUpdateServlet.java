@@ -22,8 +22,6 @@ public class FinalUpdateServlet extends HttpServlet {
         String password = request.getParameter("password");
         String telephone = request.getParameter("telephone");
 
-        System.out.println("FinalUpdate "+fname+"FinalUpdate "+"FinalUpdate "+lname+" FinalUpdate "+password);
-
         studentInfo.setFname(fname);
         studentInfo.setLname(lname);
         studentInfo.setUsername(username);

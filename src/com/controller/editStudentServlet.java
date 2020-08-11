@@ -28,21 +28,6 @@ public class editStudentServlet extends HttpServlet {
         //value comes here
         studentInfo studentInfo1 = userDAO.ShowEditTable(studentInfo);
 
-
-//        String fname = request.getParameter("fname");
-//        String lname = request.getParameter("lname");
-//        String newusername = request.getParameter("username");
-//        String telephone = request.getParameter("telephone");
-//        String password = request.getParameter("password");
-
-//        studentInfo.setFname(fname);
-//        studentInfo.setLname(lname);
-//        studentInfo.setTelephone(telephone);
-//        studentInfo.setUsername(newusername);
-//        studentInfo.setPassword(password);
-
-//        userDAO.registerStudent(studentInfo);
-
         RequestDispatcher dispatcher = request.getRequestDispatcher("EditDetails.jsp");
         request.setAttribute("user", studentInfo1);
         dispatcher.forward(request, response);

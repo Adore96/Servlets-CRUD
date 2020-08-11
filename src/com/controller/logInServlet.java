@@ -31,8 +31,6 @@ public class logInServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("username",username);
             response.sendRedirect(request.getContextPath()+"/users");
-//            RD.include(request,response);
-            System.out.println("DashBoard Response Called.");
 
         }else
         {

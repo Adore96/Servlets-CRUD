@@ -31,7 +31,7 @@ public class AddStudentServlet extends HttpServlet {
         userDAO.registerStudent(student);
 
         response.sendRedirect(request.getContextPath()+"/users");
-//        RD.include(request,response);
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
