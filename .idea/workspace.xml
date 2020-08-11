@@ -9,37 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/util/Hash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/AddStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/AddStudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/DashboardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/DashboardServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/FinalUpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/FinalUpdateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/deleteStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/deleteStudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/editStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/controller/editStudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/dao/userDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/dao/userDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/model/StudentInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Task_01___Servlets_CRUD_war_exploded/WEB-INF/classes/com/model/StudentInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/AddStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/AddStudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/DashboardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/DashboardServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/FinalUpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/FinalUpdateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/deleteStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/deleteStudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/editStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/controller/editStudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/dao/userDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/dao/userDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/model/StudentInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task 01 - Servlets CRUD/com/model/StudentInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/AddStudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/AddStudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/FinalUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/FinalUpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/dashBoardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/dashBoardServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/deleteStudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/deleteStudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/editStudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/editStudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/logInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/logInServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/registerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/registerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dao/userDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/userDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/model/studentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/model/StudentInfo.java" afterDir="false" />
-    </list>
+    <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +66,20 @@
       <recent name="D:\IntelliJ IDEA Projects\Task 01 - Servlets CRUD\web\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.371">
+  <component name="RunManager" selected="Application.Hash">
+    <configuration name="Hash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.util.Hash" />
+      <module name="Task 01 - Servlets CRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -224,6 +207,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Hash" />
         <item itemvalue="Tomcat Server.DashBoard.jsp" />
       </list>
     </recent_temporary>
@@ -252,7 +236,7 @@
       <workItem from="1596770370890" duration="27647000" />
       <workItem from="1597029361713" duration="26760000" />
       <workItem from="1597113960927" duration="10552000" />
-      <workItem from="1597148539022" duration="1383000" />
+      <workItem from="1597148539022" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
