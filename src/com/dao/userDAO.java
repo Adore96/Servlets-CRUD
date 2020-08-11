@@ -1,7 +1,7 @@
 package com.dao;
 
 import com.db.databaseConnection;
-import com.model.studentInfo;
+import com.model.StudentInfo;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,10 +12,9 @@ import java.util.List;
 
 public class userDAO {
     static Connection con = null;
-    com.db.databaseConnection databaseConnection = new databaseConnection();
     static boolean status;
 
-    public void registerStudent(studentInfo studentInfo) {
+    public void registerStudent(StudentInfo studentInfo) {
         final String sql ="insert into student"
                 + "(fname, lname, username, password,telephone) values" + "(?,?,?,?,?);";
 
@@ -41,7 +40,7 @@ public class userDAO {
         }
     }
 
-    public boolean logIn(studentInfo studentInfo) {
+    public boolean logIn(StudentInfo studentInfo) {
         final String sql ="select * from student where username = ? and password = ?";
         con = databaseConnection.getConnection();
         System.out.println("Connection : "+  con);
@@ -69,7 +68,7 @@ public class userDAO {
     }
 
 
-    public void DeleteUser(studentInfo studentInfo) throws SQLException {
+    public void DeleteUser(StudentInfo studentInfo) throws SQLException {
         final String sql ="delete from student where username =?";
 
         try {
@@ -88,8 +87,8 @@ public class userDAO {
     }
 
 
-    public List<studentInfo> ShowTable(){
-        List<studentInfo> studentInfos = new ArrayList<>();
+    public List<StudentInfo> ShowTable(){
+        List<StudentInfo> StudentInfos = new ArrayList<>();
         final String sql ="select * from student";
 
         try {
@@ -103,17 +102,17 @@ public class userDAO {
                 String username = rs.getString("username");
                 String password = rs.getString("password");
                 String telephone = rs.getString("telephone");
-                studentInfos.add(new studentInfo(fname , lname , username , password , telephone));
+                StudentInfos.add(new StudentInfo(fname , lname , username , password , telephone));
             }
             con.close();
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println(e);
         }
-        return studentInfos;
+        return StudentInfos;
     }
 
-    public void finalUpdate(studentInfo studentInfo) {
+    public void finalUpdate(StudentInfo studentInfo) {
         final String sql ="UPDATE  student SET fname = ?,lname = ? ,password = ? ,telephone = ? WHERE username = ?";
 
         try {
@@ -138,7 +137,7 @@ public class userDAO {
         }
     }
 
-    public studentInfo ShowEditTable(studentInfo studentInfo){
+    public StudentInfo ShowEditTable(StudentInfo studentInfo){
 
         final String sql ="select * from student where username = ? ";
 
@@ -154,7 +153,7 @@ public class userDAO {
                 String username = rs.getString("username");
                 String password = rs.getString("password");
                 String telephone = rs.getString("telephone");
-                studentInfo = new studentInfo(fname , lname , username , password , telephone);
+                studentInfo = new StudentInfo(fname , lname , username , password , telephone);
             }
             con.close();
         }

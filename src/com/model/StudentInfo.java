@@ -1,10 +1,10 @@
 package com.model;
 
-public class studentInfo {
+public class StudentInfo {
     private String fname , lname , username , password , telephone ;
 
 
-    public studentInfo() {
+    public StudentInfo() {
     }
 
     public String getFname() {
@@ -47,7 +47,7 @@ public class studentInfo {
         this.telephone = telephone;
     }
 
-    public studentInfo(String fname, String lname, String uname, String password, String telephone) {
+    public StudentInfo(String fname, String lname, String uname, String password, String telephone) {
         this.fname = fname;
         this.lname = lname;
         this.username = uname;

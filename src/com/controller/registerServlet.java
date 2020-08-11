@@ -1,7 +1,7 @@
 package com.controller;
 
 import com.dao.userDAO;
-import com.model.studentInfo;
+import com.model.StudentInfo;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,7 +13,7 @@ import java.io.IOException;
 public class registerServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        studentInfo student = new studentInfo();
+        StudentInfo student = new StudentInfo();
         userDAO userDAO = new userDAO();
 
         String fname = request.getParameter("fname");

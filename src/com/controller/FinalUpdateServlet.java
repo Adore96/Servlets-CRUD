@@ -1,10 +1,8 @@
 package com.controller;
 
 import com.dao.userDAO;
-import com.db.databaseConnection;
-import com.model.studentInfo;
+import com.model.StudentInfo;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +11,7 @@ import java.io.IOException;
 
 public class FinalUpdateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        studentInfo studentInfo = new studentInfo();
+        StudentInfo studentInfo = new StudentInfo();
         userDAO userDAO = new userDAO();
 
         String fname = request.getParameter("fname");

@@ -1,7 +1,7 @@
 package com.controller;
 
 import com.dao.userDAO;
-import com.model.studentInfo;
+import com.model.StudentInfo;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,7 +21,7 @@ public class dashBoardServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         userDAO userDAO = new userDAO();
 
-        List<studentInfo> listUser = userDAO.ShowTable();
+        List<StudentInfo> listUser = userDAO.ShowTable();
 
         request.setAttribute("listUser", listUser);
 

@@ -1,7 +1,7 @@
 package com.controller;
 
 import com.dao.userDAO;
-import com.model.studentInfo;
+import com.model.StudentInfo;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +16,7 @@ public class logInServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         PrintWriter out = response.getWriter();
-        studentInfo student = new studentInfo();
+        StudentInfo student = new StudentInfo();
         userDAO userDAO = new userDAO();
 
         student.setUsername(request.getParameter("uname"));

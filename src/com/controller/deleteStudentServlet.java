@@ -1,13 +1,12 @@
 package com.controller;
 
 import com.dao.userDAO;
-import com.model.studentInfo;
+import com.model.StudentInfo;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -19,7 +18,7 @@ public class deleteStudentServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         userDAO userDAO = new userDAO();
-        studentInfo studentInfo = new studentInfo();
+        StudentInfo studentInfo = new StudentInfo();
 
         String username = request.getParameter("username");
 
