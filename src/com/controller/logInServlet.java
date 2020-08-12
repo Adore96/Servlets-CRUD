@@ -3,6 +3,7 @@ package com.controller;
 import com.dao.userDAO;
 import com.model.StudentInfo;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -32,12 +33,14 @@ public class logInServlet extends HttpServlet {
             session.setAttribute("username",username);
             response.sendRedirect(request.getContextPath()+"/users");
 
-        }else
-        {
-            out.println("<script type=\"text/javascript\">");
-            out.println("alert('Username or password incorrect');");
-            out.println("location='Login.jsp';");
-            out.println("</script>");
+        }else{
+            RequestDispatcher dispatcher = request.getRequestDispatcher("LoginError.jsp");
+            dispatcher.forward(request, response);
+
+//            out.println("<script type=\"text/javascript\">");
+//            out.println("alert('Username or password incorrect');");
+//            out.println("location='Login.jsp';");
+//            out.println("</script>");
         }
         out.flush();
         out.close();
