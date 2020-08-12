@@ -36,7 +36,6 @@ public class logInServlet extends HttpServlet {
         }else{
             RequestDispatcher dispatcher = request.getRequestDispatcher("LoginError.jsp");
             dispatcher.forward(request, response);
-
         }
         out.flush();
         out.close();
