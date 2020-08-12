@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/logInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/logInServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +228,10 @@
       <workItem from="1597113960927" duration="10552000" />
       <workItem from="1597148539022" duration="1938000" />
       <workItem from="1597201523264" duration="5098000" />
-      <workItem from="1597210580077" duration="1204000" />
+      <workItem from="1597210580077" duration="1709000" />
+      <workItem from="1597217888749" duration="828000" />
+      <workItem from="1597220962778" duration="251000" />
+      <workItem from="1597221869867" duration="208000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
@@ -382,10 +386,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1029" height="425" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1596541945046" />
-    <state x="148" y="0" key="SettingsEditor" timestamp="1596789598760">
+    <state x="148" y="0" key="SettingsEditor" timestamp="1597222086584">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="148" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596789598760" />
+    <state x="148" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597222086584" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1596087507892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -402,10 +406,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1596790691785" />
-    <state x="65" y="0" key="new project wizard" timestamp="1597126813556">
+    <state x="65" y="0" key="new project wizard" timestamp="1597221247290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1597126813556" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1597221247290" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597204123975">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

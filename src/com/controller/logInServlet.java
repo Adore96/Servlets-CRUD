@@ -37,10 +37,6 @@ public class logInServlet extends HttpServlet {
             RequestDispatcher dispatcher = request.getRequestDispatcher("LoginError.jsp");
             dispatcher.forward(request, response);
 
-//            out.println("<script type=\"text/javascript\">");
-//            out.println("alert('Username or password incorrect');");
-//            out.println("location='Login.jsp';");
-//            out.println("</script>");
         }
         out.flush();
         out.close();
