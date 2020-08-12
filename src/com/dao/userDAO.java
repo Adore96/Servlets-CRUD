@@ -2,6 +2,7 @@ package com.dao;
 
 import com.db.databaseConnection;
 import com.model.StudentInfo;
+import com.util.HashFunction;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -22,11 +23,16 @@ public class userDAO {
 
         try {
             con = databaseConnection.getConnection();
+            HashFunction hashFunction = new HashFunction();
+
+            String password = studentInfo.getPassword();
+            String hashedpassword = hashFunction.hashPassword(password);
+
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1,studentInfo.getFname());
             ps.setString(2,studentInfo.getLname());
             ps.setString(3,studentInfo.getUsername());
-            ps.setString(4,studentInfo.getPassword());
+            ps.setString(4,hashedpassword);
             ps.setString(5,studentInfo.getTelephone());
             ps.executeUpdate();
             String result = "Data was inserted Successfully";
@@ -47,8 +53,13 @@ public class userDAO {
 
         try {
             PreparedStatement ps1 = con.prepareStatement(sql);
+            HashFunction hashFunction = new HashFunction();
+
+            String password = studentInfo.getPassword();
+            String hashedPassword = hashFunction.hashPassword(password);
+
             ps1.setString(1,studentInfo.getUsername());
-            ps1.setString(2,studentInfo.getPassword());
+            ps1.setString(2,hashedPassword);
             ResultSet rs = ps1.executeQuery();
 
             if (rs.next()) {
@@ -118,8 +129,6 @@ public class userDAO {
         try {
             con = databaseConnection.getConnection();
             PreparedStatement ps = con.prepareStatement(sql);
-
-            System.out.println(studentInfo.getUsername()+"  "+studentInfo.getLname());
 
             ps.setString(1,studentInfo.getFname());
             ps.setString(2,studentInfo.getLname());

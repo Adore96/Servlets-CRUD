@@ -14,11 +14,11 @@ public class AddStudentServlet extends HttpServlet {
         StudentInfo student = new StudentInfo();
         userDAO userDAO = new userDAO();
 
-        String fname = request.getParameter("fname");
-        String lname = request.getParameter("lname");
-        String telephone = request.getParameter("telephone");
-        String username = request.getParameter("uname");
-        String password = request.getParameter("password");
+        String fname = request.getParameter("fname").trim();
+        String lname = request.getParameter("lname").trim();
+        String telephone = request.getParameter("telephone").trim();
+        String username = request.getParameter("uname").trim();
+        String password = request.getParameter("password").trim();
 
         student.setFname(fname);
         student.setLname(lname);

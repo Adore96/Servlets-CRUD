@@ -5,8 +5,8 @@ import java.security.NoSuchAlgorithmException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Hash {
-    public static String hashPassword(String password) throws NoSuchAlgorithmException {
+public class HashFunction {
+    public String hashPassword(String password) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("MD5");
         md.update(password.getBytes());
         byte[] b = md.digest();
@@ -15,7 +15,8 @@ public class Hash {
             sb.append(Integer.toHexString(b1 & 0xff).toString());
         }
         System.out.println(sb.toString());
-        return sb.toString();
+        String hash = sb.toString();
+        return hash;
     }
 
 //    public static void main(String[] args) {
@@ -24,7 +25,7 @@ public class Hash {
 //        try {
 //            System.out.println(hashPassword(password));
 //        } catch (NoSuchAlgorithmException ex) {
-//            Logger.getLogger(Hash.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(HashFunction.class.getName()).log(Level.SEVERE, null, ex);
 //            System.out.println(ex);
 //        }
 //    }
