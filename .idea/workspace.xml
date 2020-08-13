@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="" />
+    <list default="true" id="59e4a2ca-b991-48c7-a654-b3e75f6eb4a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -228,7 +230,7 @@
       <workItem from="1597210580077" duration="1709000" />
       <workItem from="1597217888749" duration="828000" />
       <workItem from="1597220962778" duration="251000" />
-      <workItem from="1597221869867" duration="642000" />
+      <workItem from="1597221869867" duration="939000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
@@ -274,6 +276,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml updated" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="459" y="91" key="#HTTP_Proxy" timestamp="1597222769686">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="459" y="91" key="#HTTP_Proxy/0.0.1366.728@0.0.1366.728" timestamp="1597222769686" />
     <state x="163" y="0" key="#Project_Structure" timestamp="1596780590456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -410,10 +416,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1596790691785" />
-    <state x="65" y="0" key="new project wizard" timestamp="1597221247290">
+    <state x="65" y="0" key="new project wizard" timestamp="1597222772889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1597221247290" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1597222772889" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597204123975">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
