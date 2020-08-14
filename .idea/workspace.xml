@@ -49,7 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../EPIC_PROJECTS/ACS/CDB/WEB_ADMIN" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Struts2 CRUD" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -231,6 +231,7 @@
       <workItem from="1597217888749" duration="828000" />
       <workItem from="1597220962778" duration="251000" />
       <workItem from="1597221869867" duration="939000" />
+      <workItem from="1597298285150" duration="2397000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml updated">
       <created>1596087503346</created>
@@ -328,10 +329,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1596692614268" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597211718553">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597308851065">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597211718553" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597308851065" />
     <state width="1029" height="50" key="GridCell.Tab.0.bottom" timestamp="1597207214585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -416,10 +417,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1596790691785" />
-    <state x="65" y="0" key="new project wizard" timestamp="1597222772889">
+    <state x="65" y="0" key="new project wizard" timestamp="1597308923324">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1597222772889" />
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1597308923324" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597204123975">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
