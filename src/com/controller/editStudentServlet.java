@@ -20,7 +20,6 @@ public class editStudentServlet extends HttpServlet {
         userDAO userDAO = new userDAO();
         StudentInfo studentInfo = new StudentInfo();
 
-
         String username = request.getParameter("username");
         System.out.println("EditStudent Servlet id : " + username);
         studentInfo.setUsername(username);
@@ -30,7 +29,6 @@ public class editStudentServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("EditDetails.jsp");
         request.setAttribute("user", studentInfo1);
         dispatcher.forward(request, response);
-
 
     }
 }
